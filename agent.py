@@ -18,7 +18,7 @@ class TinyAgent:
 
     def _step(self, task: str):
         """Run a single step of the agent on a task"""
-        messages = [{"role": "user", "content": "task"}]
+        messages = [{"role": "user", "content": task}]
         response = self.llm.generate(messages=messages)
         self.trajectory.add(response=response)
         return response.content
