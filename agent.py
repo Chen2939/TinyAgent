@@ -1,5 +1,5 @@
 from trajectory import Trajectory
-from LLM import LLM
+from llm import LLM
 
 class TinyAgent:
     """A minimal, modular, and educational agent framework"""
